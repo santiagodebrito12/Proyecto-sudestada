@@ -1,0 +1,27 @@
+.nosotros{
+    margin: 5% 0 ;
+    padding: 2rem;
+    min-height: 37.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img-pochoclos{
+    width: 25rem;
+    height: 21,87rem;
+}
+.contenedor-info-seccion{
+    width: 31.25rem;
+}
+.contenedor-info-seccion h2{
+    color:#1EAEDB ;
+    // rgb(37 60 151)
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+.contenedor-info-seccion p{
+    color: black;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
