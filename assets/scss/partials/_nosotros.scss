@@ -1,3 +1,4 @@
+
 .nosotros{
     margin: 5% 0 ;
     padding: 2rem;
@@ -24,4 +25,32 @@
     color: black;
     font-weight: bold;
     font-size: 1.8rem;
+}
+
+@media(max-width:767px){
+    .nosotros{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+.img-pochoclos{
+    width: 15rem;
+    margin-bottom: 5%;
+    
+}
+.contenedor-info-seccion h2{
+    color:#1EAEDB ;
+    // rgb(37 60 151)
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-align: center;
+}
+.contenedor-info-seccion p{
+    color: black;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: auto;
+}
 }
