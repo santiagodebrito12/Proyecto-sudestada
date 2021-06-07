@@ -4,58 +4,140 @@ header{
     background-image: url(../../assets/img/background-header2x.png);
     background-repeat: no-repeat;
     background-size: cover;
-    max-height: 250px;
+    max-height: 15.6rem;
 }
 
-.contenedor-logo{
-    padding: 1rem;
-    margin-top: 0.8rem;
-    margin-left: 5%; 
- }
+
  .img-base{
      border: 6px solid white;
      border-radius: 50%;
-     width: 10.625rem;
- } 
-@media(max-width:767px){
+     width: 10.6rem;
+ }
+
+@media(max-width:1023px){
     header{
+        width: 100%;
         display: flex;
-        justify-content: space-around;
+        flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
-    .burger-menu{
-        width:100px;
-        border-radius: 50%;
+    .contenedor-carrito{
+        
+        .icono-carrito{
+            margin-bottom: 5px;
+            width: 1.9rem;
+            height: 1.9rem;
+        }
     }
-    nav.close{
-    display: none;
-    height: 0px;
-    overflow: hidden;
+
+    .contenedor-logo{
+        position: relative;
+        z-index: 1;
+        top: -20px;
     }
-    .back-ul{
-        display: none;
-    }
-}
+        .contenedor-burguer-menu {
+            padding-top: 1rem;
+            width: 100%;
+            height: 3.5rem;
+            background-color: #231f20;
+            position: relative;
+            z-index: 0;
+            top: 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .contenedor-burguer-menu.open{
+            position: fixed;
+            z-index: 500;
+        }
+
+       .contenedor-navbar{
+           display: flex;
+           flex-direction: column;
+       }
+                .bars{
+                width:1.6rem;
+                height: 3px;
+                background-color:#f9f3f3;
+                margin: 2px auto;
+                
+            }
+            .items{
+                font-size: 1rem;
+                color: white;
+                position: relative;
+                top: 1.5px;
+                left: -25px;
+            }
+ 
+            nav.close{
+            display: none;
+            height: 0px;
+            overflow: hidden;
+            }
+            nav.open{
+                transition: 3s all ease;
+                width: 100%;
+                position: fixed;
+                z-index: 500;
+                background-color: rgba(0, 0, 0, 0.9);
+                top: 55px;
+                padding-top: 1.3rem;
+                ul{
+                    list-style: none;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: flex-end;
+                    li{
+                        padding: 1rem;
+                        
+                        a{
+                            padding: 0.3rem;
+                            text-decoration: none;
+                            color: #f9f3f3;
+                            border-bottom: 1px solid #f9f3f3;
+                        
+                        }
+                    }
+                }
+
+                .back-ul{
+                    display: none;
+                }
+                .carrito,.carrito-lista{
+                    display: none;
+                }
+
+            }
+            
+        }
 
  
-@media(min-width:768px){
+@media(min-width:1024px){
     header{
         display: flex;
         justify-content: space-between;
     }
     .contenedor-logo{
-        margin-top: 0.8rem;
-        margin-left: 5%; 
+            padding: 1rem;
+            margin-top: 0.8rem;
+            margin-left: 5%;  
      }
      .img-base{
          border: 6px solid white;
          border-radius: 50%;
      }   
+     .contenedor-burguer-menu{
+         display: none;
+     }
      .burger-menu{
          display: none;
      }
         .back-ul{
-            width:55rem;
+            width:50rem;
             position: relative;
             z-index: 0;
             top: 85px;
@@ -91,7 +173,10 @@ header{
     header ul li a:hover{
         color: white;
     }
-    
+    .icono-carrito{
+        width: 30px;
+        height: 30px;
+    }
     .items{
         font-size: 1rem;
         color: white;

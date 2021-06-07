@@ -1,9 +1,8 @@
 
 /* css footer */
-@media(max-width:767px){
+@media(max-width:1023px){
     footer{
         width: 100%;
-        margin-top: 10%;
         background-image: url(../../assets/img/background-header2x.png);
         background-repeat: no-repeat;
         background-size: cover;
@@ -17,54 +16,56 @@
      .contenedor-footer{
         margin-top: 2rem;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        align-items: flex-end;
+        justify-content: space-around;
     }
     .img-footer{
-        width: 5rem;
-        height: 5rem;
+        margin-bottom: 0.5rem;
+        width: 7rem;
+        height: 7rem;
         border: 4px solid white;
         border-radius: 50%;     
     }
-    
- .lista-footer,.lista-footer-redes{
+    .lista-footer{
+        display: none;
+    }
+
+
+ .lista-footer-redes{
+    width: 400px;
     display: flex;
     align-items: center;
-    padding: 0px;
-}
-.lista-footer ,.lista-footer-redes{
-  
+    justify-content: flex-end;
+    padding: 0px;  
     color: white;
     list-style: none;
     white-space: nowrap;
+   padding: 0.625rem;
+    color: white;
+    list-style: none;
+   white-space: nowrap;
+
+ }
+
+.lista-footer-redes li{
+    margin: 0 4%;
 
 }
-.lista-footer{
-    width: 20rem;
-    margin-right: 2rem;
-
-}
-.lista-footer li,.lista-footer-redes li{
-    margin: 0 2%;
-
-    
-}
-.lista-footer li:hover,.lista-footer-redes li:hover{
+.lista-footer-redes li:hover{
     background-color: rgb(0, 149,218);
     border-radius: 5%;
 }
 
-.lista-footer li a,.lista-footer-redes li a{
+.lista-footer-redes li a{
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: bolder;
+
 }
-.lista-footer li a:hover{
-    color: #ffff;
-}
+
 .contenedor-derechos{
     background-color: black;  
+    margin-top: -5px;
 }
 .contenedor-derechos p{
     color: #ffff;
@@ -72,9 +73,14 @@
 }
 }
 
-@media(min-width:769px){
 
+
+
+
+@media(min-width:1024px){
+    
     footer{
+
         width: 100%;
         min-height: 11.25rem;
         margin-top: 10%;
@@ -105,31 +111,15 @@
          position: relative;
          z-index: 1;
      }
-}
-
-
-@media(min-width:769px) and (max-width:1400px){
     .back-footer{
         height:4.375rem;
-        width:100rem;
+        width:80%;
         position: absolute;
         z-index: 0;
         top: 35%;
-        left: 15%;
+        right: 0;
         }
-}
-@media(min-width:1402px){
-    .back-footer{
-        height:4.375rem;
-        width:81.75rem;
-        position: absolute;
-        z-index: 0;
-        top: 35%;
-        left: 35%;
-        }
-}
-    
-
+        
     
  .contenedor-footer,.lista-footer,.lista-footer-redes{
     display: flex;
@@ -172,3 +162,8 @@
     color: #ffff;
     text-align: center;
 }
+
+}
+    
+
+    

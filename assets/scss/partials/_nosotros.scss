@@ -10,14 +10,13 @@
 
 .img-pochoclos{
     width: 25rem;
-    height: 21,87rem;
+    height: 21,9rem;
 }
 .contenedor-info-seccion{
-    width: 31.25rem;
+    width: 31.2rem;
 }
 .contenedor-info-seccion h2{
     color:#1EAEDB ;
-    // rgb(37 60 151)
     font-size: 2.5rem;
     font-weight: bolder;
 }
@@ -26,8 +25,12 @@
     font-weight: bold;
     font-size: 1.8rem;
 }
+.border-seccion-productos{
+    width: 100%;
+    height: 2.8rem;
+}
 
-@media(max-width:767px){
+@media(max-width:1023px){
     .nosotros{
         display: flex;
         flex-direction: column;
@@ -41,8 +44,7 @@
     
 }
 .contenedor-info-seccion h2{
-    color:#1EAEDB ;
-    // rgb(37 60 151)
+    color:rgb(0, 84, 154);
     font-size: 1.5rem;
     font-weight: bolder;
     text-align: center;
@@ -53,4 +55,5 @@
     font-size: 1.2rem;
     margin: auto;
 }
+
 }

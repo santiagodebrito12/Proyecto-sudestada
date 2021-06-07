@@ -1,5 +1,5 @@
 // * css productos */
-@media(max-width:767px){
+@media(max-width:1023px){
     
 .seccion-productos{
     padding: 1rem;
@@ -10,8 +10,7 @@
 }
 .seccion-productos h2{
     text-align: center;
-    color: #1EAEDB;
-    // rgb(37 60 151)
+    color: rgb(0, 84, 154);
     font-size: 2.5rem;
     font-weight: bolder;
 }
@@ -20,11 +19,11 @@
     border: none;
 }
 .btn-flecha img{
-    width: 30px;
+    width: 1.9rem;
 }
 .contenedor-carrousel{
     width: 100%;
-    min-height: 34.37rem;
+    min-height: 34.4rem;
 
     display: flex;
     justify-content: space-between;
@@ -53,15 +52,15 @@
     flex-direction: column;
     align-items: center;
 }
-.card:hover{
-    transform: rotate(20deg);
-}
-
 
 .img-producto{
-    width: 15.626rem;
-    height: 12.5rem;
+    width: 20rem;
+    height: 20rem;
 }
+.img-producto:hover{
+    animation: .8s rotate linear;
+}
+
 
 .card-body{
     display: flex;
@@ -71,7 +70,7 @@
 }
 
 
-@media(min-width:768px){
+@media(min-width:1024px){
 .seccion-productos{
     padding: 1rem;
     margin-top: 5%;
@@ -81,8 +80,7 @@
 }
 .seccion-productos h2{
     text-align: center;
-    color: #1EAEDB;
-    // rgb(37 60 151)
+    color: rgb(0, 84, 154);
     font-size: 3.5rem;
     font-weight: bolder;
 }
@@ -92,7 +90,7 @@
 }
 .contenedor-carrousel{
     width: 100%;
-    min-height: 34.37rem;
+    min-height: 34.4rem;
     padding: 2rem;
     display: flex;
     justify-content: space-between;
@@ -102,7 +100,7 @@
 .contenedor-productos{
     width: 100%;
     height: 50%;
-    padding: 1.563rem;
+    padding: 1.5rem;
     scroll-behavior: smooth;
     overflow: hidden;
     display: flex;
@@ -116,19 +114,17 @@
 .card{
     margin: auto;
     width: 25rem;
-    min-height: 18.75rem;
+    min-height: 18.7rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;  
 }
-.card:hover{
-    transform: rotate(20deg);
-}
-
-
 .img-producto{
-    width: 15.626rem;
-    height: 12.5rem;
+    width: 20rem;
+    height: 20rem;
+}
+.img-producto:hover{
+    animation: .8s rotate linear;
 }
 
 .card-body{

@@ -12,6 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/skeleton.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://kit.fontawesome.com/ec2c9cb198.js" crossorigin="anonymous"></script>
 
 
@@ -21,23 +22,31 @@
 <body>
 
     <header>
+        <div class="contenedor-burguer-menu">
+            <div class="contenedor-navbar">
+                <span class="bars"></span><span class="bars"></span><span class="bars"></span>
+            </div>
+            <div class="contenedor-carrito">
+            <img src="assets/img/Recurso-2@3x.png" class="icono-carrito" alt="icono carrito">
+            <span class="items"> 0 </span>
+            </div>
+        </div>
+
+
         <div class="contenedor-logo">
             <img src="assets/img/base570-2x.png" alt="logo-base" class="img-base">
         </div>
-
-        <a><img src="assets/img/menu.jpg" class="burger-menu"></a>
-        <nav class="close">
-            <img src="assets/img/back-ul.png" class="back-ul" >
+        
+        
+        <nav class="close" id="nav-menu">
+            <img src="assets/img/back-ul.png" class="back-ul" alt="img-background" >
             <ul>
-                <li><a href="#incio">Inicio</a></li>
-                <li><a href="comprar-online">Comprar online</a></li>
+                <li><a href="#nosotros">Inicio</a></li>
+                <li><a href="#productos">Comprar online</a></li>
                 <li><a href="#productos">Productos</a></li>
                 <li><a href="#contacto">Contacto</a></li>
-              
-                <li><img src="assets/img/Recurso 1@3x.png" width="30px" height="30px"></li>
-               <li><img src="assets/img/Recurso 2@3x.png"  width="30px" height="30px"><span class="items">0</span></li>
+               <li><img src="assets/img/Recurso-2@3x.png" class="icono-carrito" alt="icono-carrito"><span class="items carrito-lista">0</span></li>
             </ul>
-          
         </nav>
     </header>
 
@@ -62,7 +71,7 @@
         </div>
     </section>
 
-    <img src="assets/img/border.png" width="100%" height="45px">
+    <img src="assets/img/border.png" class="border-seccion-productos" alt="border-seccion">
    
    
    
@@ -78,7 +87,7 @@
                                     
                                     <div class="productos">
                                         <div class="card shadow-sm p-2 mb-3 bg-body rounded">
-                                                        <img src="assets/img/producto1-2x.png" class="card-img-top" alt="productos 1" class="img-producto"> 
+                                                        <img src="assets/img/producto1-2x.png" alt="productos 1" class="img-producto"> 
                                                         <div class="card-body">
                                                         <p class="card-text">Presentacion dulce y salado en bolsa de 200grs</p>
                                                         <a href="#" class="button  btn-comprar">$200</a>
@@ -88,7 +97,7 @@
 
                                     <div class="productos">
                                         <div class="card shadow p-2 mb-3 bg-body rounded " >
-                                            <img src="assets/img/producto2-2x.png" class="card-img-top" alt="productos 1" class="img-producto">
+                                            <img src="assets/img/producto2-2x.png"  alt="productos 1" class="img-producto">
                                             <div class="card-body">
                                                 <p class="card-text">Presentacion dulce y salado en bolsa de 50grs</p>
                                                 <a href="#" class="button btn-comprar">$120</a>
@@ -99,7 +108,7 @@
 
                                     <div class="productos">
                                         <div class="card shadow p-2 mb-3 bg-body rounded " >
-                                            <img src="assets/img/producto1-2x.png" class="card-img-top" alt="productos 1" class="img-producto">
+                                            <img src="assets/img/producto1-2x.png"  alt="productos 1" class=" img-producto">
                                             <div class="card-body">
                                                 <p class="card-text">Presentacion dulce y salado en bolsa de 50grs</p>
                                                 <a href="#" class="button btn-comprar">$120</a>
@@ -109,7 +118,7 @@
 
                                     <div class="productos">
                                         <div class="card shadow p-2 mb-3 bg-body rounded " >
-                                            <img src="assets/img/producto2-2x.png" class="card-img-top" alt="productos 1" class="img-producto">
+                                            <img src="assets/img/producto2-2x.png"  alt="productos 1" class="img-producto">
                                             <div class="card-body">
                                                 <p class="card-text">Presentacion dulce y salado en bolsa de 50grs</p>
                                                 <a href="#" class="button btn-comprar">$120</a>
@@ -119,7 +128,7 @@
 
                                     <div class="productos">
                                         <div class="card shadow p-2 mb-3 bg-body rounded " >
-                                            <img src="assets/img/producto2-2x.png" class="card-img-top" alt="productos 1" class="img-producto">
+                                            <img src="assets/img/producto2-2x.png" alt="productos 1" class="img-producto">
                                             <div class="card-body">
                                                 <p class="card-text">Presentacion dulce y salado en bolsa de 50grs</p>
                                                 <a href="#" class="button btn-comprar">$120</a>
@@ -129,7 +138,7 @@
 
                                     <div class="productos">
                                         <div class="card shadow p-2 mb-3 bg-body rounded " >
-                                            <img src="assets/img/producto1-2x.png" class="card-img-top" alt="productos 1" class="img-producto">
+                                            <img src="assets/img/producto1-2x.png"  alt="productos 1" class=" img-producto">
                                             <div class="card-body">
                                                 <p class="card-text">Presentacion dulce y salado en bolsa de 50grs</p>
                                                 <a href="#" class="button btn-comprar">$120</a>
@@ -155,7 +164,7 @@
 
     <footer>
         
-        <div class="contenedor-footer">
+        <div class="contenedor-footer" id="contacto">
             <ul class="lista-footer">
                 <li><a>INICIO</a></li>
                 <li><a>COMPRAR ONLINE</a></li>
@@ -163,7 +172,7 @@
                 <li><a>CONTACTO</a></li>
             </ul>
             
-            <img src="assets/img/base570-2x.png" class="img-footer">
+            <img src="assets/img/base570-2x.png" class="img-footer" alt="footer-background">
             
         
             <ul class="lista-footer-redes">
@@ -173,7 +182,7 @@
                 <li><i class="far fa-envelope"></i></li>
             </ul>
         </div>
-        <img src="assets/img/back-ul.png" class="back-footer">
+        <img src="assets/img/back-ul.png" class="back-footer" alt="footer-background">
     </footer>
 
 
