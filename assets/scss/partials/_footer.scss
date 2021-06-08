@@ -2,7 +2,6 @@
 /* css footer */
 @media(max-width:1023px){
     footer{
-        width: 100%;
         background-image: url(../../assets/img/background-header2x.png);
         background-repeat: no-repeat;
         background-size: cover;
@@ -14,7 +13,7 @@
          display: none;
      }
      .contenedor-footer{
-        margin-top: 2rem;
+        margin: 2rem 3%;
         display: flex;
         align-items: flex-end;
         justify-content: space-around;
@@ -80,20 +79,23 @@
 @media(min-width:1024px){
     
     footer{
-
         width: 100%;
-        min-height: 11.25rem;
-        margin-top: 10%;
+        min-height: 11.25rem;   
         background-image: url(../../assets/img/background-header2x.png);
+        // background-image: url(../../assets/img/bordado-lovepopcorn-footer.jpg);
+        // background-image: url(../../assets/img/main-footer-background.png);
         background-repeat: no-repeat;
         background-size: cover;
-         position: relative;
-         z-index: 1;
-         overflow: hidden;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        font-family: $fuenteTitulos;
      }
+     
+     
      .contenedor-footer{
-         margin-top: 2.813rem;
-         width: 80%;
+         margin: 5% 5%;
+         width: 62.5rem;
          padding: 0.5rem;
          float: right;
          display: flex;
@@ -126,16 +128,28 @@
     align-items: center;
 }
 .lista-footer ,.lista-footer-redes{
+    font-size: 2rem;
     padding: 0.625rem;
     color: white;
     list-style: none;
     white-space: nowrap;
+    background-color: #000;
 
 }
 .lista-footer{
     width: 43.75;
     margin-right: 4rem;
 
+}
+.lista-footer::before{
+    content: url(../../assets/img/back-before.png);
+    display:block;
+    width: 100px;
+    height:100px;
+    z-index: 0;
+    position:absolute;
+    left: -50px;
+    top: 0;
 }
 .lista-footer li,.lista-footer-redes li{
     margin: 0 2%;
@@ -149,7 +163,7 @@
 
 .lista-footer li a,.lista-footer-redes li a{
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-weight: bolder;
 }
 .lista-footer li a:hover{

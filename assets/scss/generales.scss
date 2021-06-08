@@ -1,3 +1,4 @@
+@import "partials/variables";
 @import "partials/header";
 @import "partials/main";
 @import "partials/nosotros";
@@ -6,6 +7,7 @@
 
 :root{
     font-size: 16px;
+    font-family:$fuenteGeneral ;
 }
 
 body{
@@ -16,6 +18,7 @@ body{
     font-family:   'Roboto', sans-serif;
     scroll-behavior: smooth;
 }
+
 
 @keyframes rotate{
     0%{transform: rotate(0deg);}

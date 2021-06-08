@@ -1,29 +1,38 @@
-header{
-    margin-top: -15px;
-    width: 100%;
-    background-image: url(../../assets/img/background-header2x.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-height: 15.6rem;
-}
+// header{
+//     margin-top: -15px;
+//     width: 100%;
+//     background-image: url(../../assets/img/background-header2x.png);
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     max-height: 15.6rem;
+//     font-family: $fuenteTitulos;
+// }
 
-
- .img-base{
-     border: 6px solid white;
-     border-radius: 50%;
-     width: 10.6rem;
- }
-
-@media(max-width:1023px){
+@media(max-width:1200px){
     header{
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        background-color: black;
+            margin-top: -10px;
+            width: 100%;
+            // background-image: url(../../assets/img/bordado-lovepopcorn.png);
+            background-image: url(../../assets/img/background-header2x.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            max-height: 15.6rem;
+            font-family: $fuenteTitulos;
+        
+    }
+    .img-base{
+        border: 6px solid white;
+        border-radius: 50%;
+        width: 9rem;
     }
     .contenedor-carrito{
-        
+        margin-right: 3%;
         .icono-carrito{
             margin-bottom: 5px;
             width: 1.9rem;
@@ -45,17 +54,19 @@ header{
             z-index: 0;
             top: 0;
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
         }
         .contenedor-burguer-menu.open{
             position: fixed;
             z-index: 500;
+            top: -5px;
         }
 
        .contenedor-navbar{
            display: flex;
            flex-direction: column;
+           margin-left: 3%;
        }
                 .bars{
                 width:1.6rem;
@@ -83,7 +94,7 @@ header{
                 position: fixed;
                 z-index: 500;
                 background-color: rgba(0, 0, 0, 0.9);
-                top: 55px;
+                top: 45px;
                 padding-top: 1.3rem;
                 ul{
                     list-style: none;
@@ -95,11 +106,12 @@ header{
                         padding: 1rem;
                         
                         a{
+                            font-size: 2rem;
+                            font-family:  'Chewy', cursive;
                             padding: 0.3rem;
                             text-decoration: none;
                             color: #f9f3f3;
                             border-bottom: 1px solid #f9f3f3;
-                        
                         }
 
                     }
@@ -117,10 +129,20 @@ header{
         }
 
  
-@media(min-width:1024px){
+@media(min-width:1201px){
     header{
-        display: flex;
-        justify-content: space-between;
+            background-color: black;
+            margin-top: -15px;
+            width: 100%;
+            // background-image: url(../../assets/img/bordado-lovepopcorn.png);
+            background-image: url(../../assets/img/background-header2x.png);
+            background-repeat: repeat;
+            // background-size: cover;
+            max-height: 15.6rem;
+            font-family: $fuenteTitulos;
+            display: flex;
+            justify-content: space-between;
+
     }
     .contenedor-logo{
             padding: 1rem;
@@ -130,6 +152,7 @@ header{
      .img-base{
          border: 6px solid white;
          border-radius: 50%;
+         width: 10.6rem;
      }   
      .contenedor-burguer-menu{
          display: none;
@@ -139,18 +162,20 @@ header{
      }
         .back-ul{
             width:50rem;
+
             position: relative;
             z-index: 0;
             top: 85px;
         }
         nav{
+            margin-right: 5%;
             position: relative;
-            top: -45px;
+            top: 4rem;
             display: flex;
             flex-direction: column;
             align-items: flex-end;
         }
-    header ul{
+    header nav ul{
         position: relative;
         z-index: 1;
         display: flex;
@@ -167,6 +192,7 @@ header{
     }
 
     header ul li a{
+        font-size: 1.7rem;
         color: white;
         text-decoration: none;
         font-weight: bold;
