@@ -188,6 +188,9 @@
 
 @media (max-width: 1023px) {
   main {
+    background-image: url(../../assets/img/background-main-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
     overflow: hidden;
     min-height: 25rem;
@@ -197,11 +200,7 @@
     margin-top: -5px;
   }
   .back-main-img {
-    width: 100%;
-    min-height: 25rem;
-    position: absolute;
-    left: 0;
-    top: 0;
+    display: none;
   }
   .contenedor-info {
     margin-left: 3%;
@@ -230,11 +229,10 @@
   .logo-sudestada {
     position: relative;
     z-index: 2;
-    width: 15rem;
+    width: 100%;
   }
 }
 
-/* estilos main */
 @media (min-width: 1024px) {
   main {
     position: relative;
@@ -358,6 +356,19 @@
   }
 }
 
+@media (max-width: 620px) {
+  .btn-flecha {
+    display: none;
+  }
+  .productos {
+    overflow: hidden;
+    width: 100%;
+    flex-shrink: 0;
+    margin: 5%;
+    padding: 1rem;
+  }
+}
+
 @media (max-width: 1023px) {
   .seccion-productos {
     padding: 1rem;
@@ -412,6 +423,7 @@
   }
   .img-producto {
     margin: auto;
+    max-width: 30rem;
   }
   .img-producto:hover {
     animation: .8s rotate linear;
