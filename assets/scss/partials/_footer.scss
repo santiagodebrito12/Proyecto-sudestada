@@ -133,7 +133,6 @@
     color: white;
     list-style: none;
     white-space: nowrap;
-    background-color: #000;
 
 }
 .lista-footer{
@@ -141,16 +140,7 @@
     margin-right: 4rem;
 
 }
-.lista-footer::before{
-    content: url(../../assets/img/back-before.png);
-    display:block;
-    width: 100px;
-    height:100px;
-    z-index: 0;
-    position:absolute;
-    left: -50px;
-    top: 0;
-}
+
 .lista-footer li,.lista-footer-redes li{
     margin: 0 2%;
     padding: 0.625rem;

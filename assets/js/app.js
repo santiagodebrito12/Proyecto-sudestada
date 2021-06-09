@@ -1,20 +1,12 @@
 
+
 //variables
 const contenedorCarrousel = document.querySelector('.contenedor-productos');
 const btnIzquierda = document.querySelector('.flecha-izq');
 const btnDerecha = document.querySelector('.flecha-derecha');
 
 
-//Eventos
 
-btnDerecha.addEventListener('click', () =>{
-    console.log('desde btn derecha...')
-    contenedorCarrousel.scrollLeft += contenedorCarrousel.offsetWidth;
-})
-
-btnIzquierda.addEventListener('click', () =>{
-    contenedorCarrousel.scrollLeft -= contenedorCarrousel.offsetWidth;
-})
 
 
 
@@ -42,4 +34,68 @@ btnNavBar.addEventListener('click', () =>{
 
 })
 
-//animacion de imagenes
+
+// Slider para desktop
+var mediaqueryList = window.matchMedia("(min-width: 620px)");
+
+if(mediaqueryList.matches){
+  console.log('se cumple la media')
+}else{
+  console.log('no se cumple la media')
+}
+
+
+
+
+const swiper = new Swiper('.swiper-container', {
+     
+        slidesPerView: 3,
+        spaceBetween: 30,
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+ 
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    "@0.00": {
+     slidesPerView: 1,
+     spaceBetween: 10,
+    },
+    "@0.50":{
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    "@0.75": {
+        slidesPerView: 2,
+        spaceBetween: 10,
+    },
+    "@1.00": {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    "@1.50": {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    },
+},
+
+});
+
+

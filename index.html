@@ -23,10 +23,18 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
+   
+    
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+ 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/skeleton.css">
@@ -35,7 +43,7 @@
 
 
     <link rel="stylesheet" href="dist/css/generales.min.css">
-   
+
 </head>
 <body>
 
@@ -96,100 +104,53 @@
    
     <section id="productos" class="seccion-productos">
         <h2>NUESTROS PRODUCTOS</h2>
-
-        <div class="contenedor-carrousel">
-
-             <button class="btn-flecha flecha-izq"><img src="assets/img/flecha1.png" alt="icono-lecha" ></button>
-
-                                <div class="contenedor-productos">
-                                    
-                                    
-                                    <div class="productos">
-                                        <div class="card p-2 mb-3 bg-body rounded">
-                                                        <div class="card-img">
-                                                        <img src="assets/img/producto1-2x.png" alt="productos-1" class="card-img-top img-producto"> 
-                                                        </div>
-                                                        <div class="card-body">
-                                                        <p class="card-text">Presentacion dulce y salado en bolsa de 200grs</p>
-                                                        <a href="#" class="button  btn-comprar">COMPRAR</a>
-                                                        </div>
-                                            </div>
-                                    </div>
-
-                                    <div class="productos">
-                                        <div class="card  p-2 mb-3 bg-body rounded " >
-                                            <div class="card-img">
-                                            <img src="assets/img/producto2-2x.png"  alt="productos-2" class="card-img-top img-producto">
-                                             </div>
-                                            <div class="card-body">
-                                                <p class="card-text">Presentacion dulce y salado en bolsa de 50grs</p>
-                                                <a href="#" class="button btn-comprar">COMPRAR</a>
-                                            </div>
-                                         </div>
-                                    </div>
-
-
-                                    <div class="productos">
-                                        <div class="card  p-2 mb-3 bg-body rounded " >
-                                            <div class="card-img">
-                                            <img src="assets/img/producto1-2x.png"  alt="productos-3" class="card-img-top img-producto">
-                                            </div>
-                                            <div class="card-body">
-                                                <p class="card-text">Presentacion dulce y salado en bolsa de 50grs</p>
-                                                <a href="#" class="button btn-comprar">COMPRAR</a>
-                                            </div>
-                                         </div>
-                                    </div>
-
-                                    <div class="productos">
-                                        <div class="card  p-2 mb-3 bg-body rounded " >
-                                            <div class="card-img">
-                                            <img src="assets/img/producto2-2x.png"  alt="productos-4" class="card-img-top img-producto">
-                                        </div>
-                                            <div class="card-body">
-                                                <p class="card-text">Presentacion dulce y salado en bolsa de 50grs</p>
-                                                <a href="#" class="button btn-comprar">COMPRAR</a>
-                                                
-                                            </div>
-                                         </div>
-                                    </div>
-
-                                    <div class="productos">
-                                        <div class="card  p-2 mb-3 bg-body rounded " >
-                                            <div class="card-img">
-                                            <img src="assets/img/producto2-2x.png" alt="productos-5" class="card-img-top img-producto">
-                                             </div>
-                                            <div class="card-body">
-                                                <p class="card-text">Presentacion dulce y salado en bolsa de 50grs</p>
-                                                <a href="#" class="button btn-comprar">COMPRAR</a>
-                                            </div>
-                                         </div>
-                                    </div>
-
-                                    <div class="productos">
-                                        <div class="card  p-2 mb-3 bg-body rounded " >
-                                            <div class="card-img">
-                                            <img src="assets/img/producto1-2x.png"  alt="productos-6" class="card-img-top img-producto">
-                                             </div>
-                                            <div class="card-body">
-                                                <p class="card-text">Presentacion dulce y salado en bolsa de 50grs</p>
-                                                <a href="#" class="button btn-comprar">COMPRAR</a>
-                                            </div>
-                                         </div>
-                                    </div>
-
-                                    
-
-                                
-
-                                    
-                                    
-                                    
-                                </div>
-             
-             <button class="btn-flecha flecha-derecha"><img src="assets/img/flecha2.png" alt="icono-flecha"> </button>
-        
+        <!-- Slider main container -->
+    <div class="swiper-container" id="swiper-container">
+   
+        <div class="swiper-wrapper">
+      
+            <div class="swiper-slide" id="swiper-slide">
+                <div class="card  p-2 mb-3 bg-body rounded " >
+                    <div class="card-img">
+                    <img src="assets/img/producto2-2x.png"  alt="productos-2" class="card-img-top img-producto">
+                     </div>
+                    <div class="card-body">
+                        <p class="card-text">Presentacion dulce y salado en bolsa de 50grs</p>
+                        <a href="#" class="button btn-comprar">COMPRAR</a>
+                    </div>
+                 </div>
+            </div>
+            <div class="swiper-slide" id="swiper-slide">
+                <div class="card  p-2 mb-3 bg-body rounded " >
+                    <div class="card-img">
+                    <img src="assets/img/producto1-2x.png"  alt="productos-3" class="card-img-top img-producto">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Presentacion dulce y salado en bolsa de 50grs</p>
+                        <a href="#" class="button btn-comprar">COMPRAR</a>
+                    </div>
+                 </div>
+            </div>
+            <div class="swiper-slide" id="swiper-slide">
+                <div class="card  p-2 mb-3 bg-body rounded " >
+                    <div class="card-img">
+                    <img src="assets/img/producto1-2x.png"  alt="productos-3" class="card-img-top img-producto">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Presentacion dulce y salado en bolsa de 50grs</p>
+                        <a href="#" class="button btn-comprar">COMPRAR</a>
+                    </div>
+                 </div>
+            </div>  
         </div>
+       
+        <div class="swiper-pagination"></div>
+  
+            <!--    
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+  
+    </div>
         
     </section>
 
