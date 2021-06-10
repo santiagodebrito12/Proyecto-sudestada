@@ -95,7 +95,8 @@
      
      
      .contenedor-footer{
-         margin: 5% 5%;
+        height: 80px;
+        margin: 5% 5%;
          width: 62.5rem;
          float: right;
          display: flex;
@@ -130,15 +131,15 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 80px;
-}
+  }
+
 .lista-footer ,.lista-footer-redes{
-    
+    height: 60px;
+    margin: auto;
     font-size: 2rem;
     color: white;
     list-style: none;
     white-space: nowrap;
-    
 }
 
 .lista-footer{

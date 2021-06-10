@@ -293,7 +293,7 @@
     text-shadow: 2px 2px 3px black;
   }
   .btn-comprar {
-    background-color: #00549a;
+    background-color: #0095da;
     color: #ffff;
     font-size: 1.2rem;
     border: none;
@@ -601,6 +601,7 @@
     font-family: "Chewy", cursive;
   }
   .contenedor-footer {
+    height: 80px;
     margin: 5% 5%;
     width: 62.5rem;
     float: right;
@@ -632,9 +633,10 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 80px;
   }
   .lista-footer, .lista-footer-redes {
+    height: 60px;
+    margin: auto;
     font-size: 2rem;
     color: white;
     list-style: none;

@@ -14,28 +14,21 @@ const btnDerecha = document.querySelector('.flecha-derecha');
 const contenedorNavBar = document.querySelector('.contenedor-burguer-menu');
 const btnNavBar = document.querySelector('.contenedor-navbar');
 const navMenu   = document.querySelector('#nav-menu');
+const body      = document.querySelector('body');   
+
 
 
 //Evento CLICK
-
-btnNavBar.addEventListener('click', () =>{
-    
+btnNavBar.addEventListener('click', () =>{   
     if(navMenu.classList.contains('close')){     
         navMenu.classList.remove('close');
         // contenedorNavBar.classList.add('open','animate__animated' ,'animate__slideInDown')
         navMenu.classList.add('open','animate__animated' ,'animate__slideInDown');
-     
     }else{
-
        navMenu.classList.add('close','animate__animated','slideInUp');
-      //  contenedorNavBar.classList.remove('open','animate__animated' ,'animate__slideInDown');
        navMenu.classList.remove('open');
     }
 })
-
-
-
-
 
 
 
@@ -71,7 +64,7 @@ const swiper = new Swiper('.swiper-container', {
      spaceBetween: 10,
     },
     "@0.50":{
-      slidesPerView: 2,
+      slidesPerView: 1,
       spaceBetween: 10,
     },
     "@0.75": {
