@@ -20,29 +20,21 @@ const navMenu   = document.querySelector('#nav-menu');
 
 btnNavBar.addEventListener('click', () =>{
     
-    if(navMenu.classList.contains('close')){
-        
+    if(navMenu.classList.contains('close')){     
         navMenu.classList.remove('close');
-        contenedorNavBar.classList.add('open','animate__animated' ,'animate__slideInDown')
+        // contenedorNavBar.classList.add('open','animate__animated' ,'animate__slideInDown')
         navMenu.classList.add('open','animate__animated' ,'animate__slideInDown');
      
     }else{
+
        navMenu.classList.add('close','animate__animated','slideInUp');
-       contenedorNavBar.classList.remove('open','animate__animated' ,'animate__slideInDown');
+      //  contenedorNavBar.classList.remove('open','animate__animated' ,'animate__slideInDown');
        navMenu.classList.remove('open');
     }
-
 })
 
 
-// Slider para desktop
-var mediaqueryList = window.matchMedia("(min-width: 620px)");
 
-if(mediaqueryList.matches){
-  console.log('se cumple la media')
-}else{
-  console.log('no se cumple la media')
-}
 
 
 
