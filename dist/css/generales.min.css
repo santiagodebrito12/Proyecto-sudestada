@@ -204,8 +204,9 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 768px) {
   .contenedor-info h1 {
+    text-align: center;
     font-size: 1rem;
     font-family: "Chewy", cursive;
     font-weight: bolder;
@@ -579,7 +580,7 @@
     font-weight: bolder;
   }
   .contenedor-derechos {
-    background-color: black;
+    background-color: #231f20;
     margin-top: -5px;
   }
   .contenedor-derechos p {
@@ -677,7 +678,7 @@
     color: #ffff;
   }
   .contenedor-derechos {
-    background-color: black;
+    background-color: #231f20;
   }
   .contenedor-derechos p {
     color: #ffff;
