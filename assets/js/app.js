@@ -14,11 +14,9 @@ const btnDerecha = document.querySelector('.flecha-derecha');
 const contenedorNavBar = document.querySelector('.contenedor-burguer-menu');
 const btnNavBar = document.querySelector('.contenedor-navbar');
 const navMenu   = document.querySelector('#nav-menu');
-const body      = document.querySelector('body');   
+const listaNav  = document.querySelector('.lista-nav');
 
-
-
-//Evento CLICK
+// Evento CLICK
 btnNavBar.addEventListener('click', () =>{   
     if(navMenu.classList.contains('close')){     
         navMenu.classList.remove('close');
@@ -30,11 +28,23 @@ btnNavBar.addEventListener('click', () =>{
     }
 })
 
+listaNav.addEventListener('click', ()=>{
+  if(navMenu.classList.contains('open')){
+    navMenu.classList.remove('open');
+    navMenu.classList.add('close','animate__animated','slideInUp');
+  }
+})
+  
+  
+
+
+
+
 
 
 const swiper = new Swiper('.swiper-container', {
      
-        slidesPerView: 3,
+        // slidesPerView: 3,
         spaceBetween: 30,
   // Optional parameters
   direction: 'horizontal',
@@ -68,17 +78,23 @@ const swiper = new Swiper('.swiper-container', {
       spaceBetween: 10,
     },
     "@0.75": {
-        slidesPerView: 2,
+        slidesPerView: 1,
         spaceBetween: 10,
     },
     "@1.00": {
-      slidesPerView: 3,
+      slidesPerView: 2,
       spaceBetween: 30,
     },
     "@1.50": {
-    slidesPerView: 3,
+    slidesPerView: 2,
     spaceBetween: 30,
     },
+    "@2.00": {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      },
+
+
 },
 
 });
