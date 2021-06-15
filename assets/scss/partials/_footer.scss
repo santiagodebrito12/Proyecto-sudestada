@@ -35,21 +35,17 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding: 0px;  
     color: white;
     list-style: none;
-    white-space: nowrap;
-   padding: 0.625rem;
+    padding: 0.625rem;
     color: white;
     list-style: none;
-   white-space: nowrap;
-
  }
 
 .lista-footer-redes li{
     margin: 0 4%;
-
 }
+
 .lista-footer-redes li:hover{
     background-color: rgb(0, 149,218);
     border-radius: 5%;
@@ -57,9 +53,8 @@
 
 .lista-footer-redes li a{
     text-decoration: none;
-    font-size: 0.9rem;
     font-weight: bolder;
-
+    color: #fff;
 }
 
 .contenedor-derechos{
@@ -173,10 +168,12 @@
     border-radius: 5%;
 }
 
-.lista-footer li a,.lista-footer-redes li a{
+.lista-footer li a , .lista-footer-redes li a{
     text-decoration: none;
     font-size: 1.6rem;
     font-weight: bolder;
+    color: #fff;
+
 }
 .lista-footer li a:hover{
     color: #ffff;

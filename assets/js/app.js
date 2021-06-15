@@ -53,6 +53,7 @@ const swiper = new Swiper('.swiper-container', {
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
+    dynamicBullets: true,
   },
 
  
@@ -86,7 +87,7 @@ const swiper = new Swiper('.swiper-container', {
       spaceBetween: 30,
     },
     "@1.50": {
-    slidesPerView: 2,
+    slidesPerView: 3,
     spaceBetween: 30,
     },
     "@2.00": {
