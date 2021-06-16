@@ -61,15 +61,14 @@
         color: #ffff;
         border: none;
         font-size: 0.8rem;
+       
     }
     
     .fa-shopping-cart{
         color: white;
+        
     }
-    
-   
-    
-    
+     
     .contenedor-img{
         margin-right: 3%;
     }
@@ -117,7 +116,7 @@
     .contenedor-btn-comprar{
         display: flex;
         background-color: rgb(0, 84, 154);
-        padding: 0.3rem 0.3rem;
+        padding: 0.5rem;
         justify-content: space-around;
         max-height: 60px;
         width: 100%;
@@ -134,6 +133,7 @@
         color: #ffff;
         border: none;
         font-size: 1rem;
+    
        
     }
     
