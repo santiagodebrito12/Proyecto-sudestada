@@ -1,4 +1,14 @@
-
+@media(max-width:450px){
+    .contenedor-derechos{
+        background-color: #231f20;  
+        margin-top: -5px;
+    }
+    .contenedor-derechos p{
+        color: #ffff;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+}
 /* css footer */
 @media(max-width:1100px){
     footer{
