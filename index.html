@@ -68,7 +68,6 @@
         <nav class="close" id="nav-menu">
             <ul class="lista-nav">
                 <li><a href="index.html">Inicio</a></li>
-                <!-- <li><a href="#productos">Comprar online</a></li> -->
                 <li><a href="productos.html">Productos</a></li>
                 <li><a href="#contacto">Contacto</a></li>
                <li><img src="assets/img/Recurso-2@3x.png" class="carrito" alt="icono-carrito"><span class="items carrito-lista">0</span></li>
@@ -78,6 +77,9 @@
 
 
     <main> 
+        <div class="popcorn-left">
+            <img src="assets/img/pochoclo1.png" class="img-pochoclo">
+        </div>
         <div class="contenedor-info">
         <h1>Los Pochoclos del cine</h1>
         <a href="#comprar-online" class="button  btn-comprar"> Comprar</a>
@@ -90,20 +92,42 @@
 
 
     <section id="nosotros" class="nosotros">
+        <div class="popcorn-left">
+            <img src="assets/img/pochoclo1.png" class="img-pochoclo">
+        </div>
+       
+        <div class="popcorn-rigth-top">
+            <img src="assets/img/pochoclo1.png" class="img-pochoclo">
+         </div> 
+       
         <img src="assets/img/imagen-nosotros.jpg" alt="imagen-pochoclos" class="img-pochoclos">
+       
+        <div class="popcorn-rigth">
+            <img src="assets/img/pochoclo2.png" class="img-pochoclo">
+        </div>
+        <div class="popcorn-rigth-bottom">
+            <img src="assets/img/pochoclo3.png" class="img-pochoclo">
+        </div>
+   
+
         <div class="contenedor-info-seccion">
             <h2>NUESTROS DELICIOSOS POCHOCLOS</h2>
             <p>Elaborados de forma artesanal con una cuidadosa selección de la materia prima , la mejor calidad de maiz pisingallo, para garantizar los sabores mas delicioso tanto en pochoclos dulces como salados.</p>
-        </div>
-    </section>
 
+        </section>
     <img src="assets/img/border.png" class="border-seccion-productos" alt="border-seccion">
    
    
    
     <section id="productos" class="seccion-productos">
-        <h2>NUESTROS PRODUCTOS</h2>
-     
+      <h2>NUESTROS PRODUCTOS</h2>
+      
+      <div class="popcorn-left">
+        <img src="assets/img/pochoclo1.png" class="img-pochoclo">
+     </div>  
+     <div class="popcorn-rigth-top">
+        <img src="assets/img/pochoclo1.png" class="img-pochoclo">
+     </div>  
     <div class="swiper-container" id="swiper-container">
    
         <div class="swiper-wrapper">
@@ -115,7 +139,14 @@
                      </div>
                     <div class="card-body">
                         <p class="card-text">Presentacion dulce y salado en bolsa de 50grs</p>
+                        <p class="card-text precio"> $200 </p>
+                        <div class="contenedor-btn-comprar">
+                            <div class="contenedor-img-carrito">
+                                <i class="fas fa-shopping-cart" ></i>
+                            </div>
                         <a href="#" class="button btn-comprar">AGREGAR AL CARRITO</a>
+                        
+                        </div>
                     </div>
                  </div>
             </div>
@@ -126,10 +157,19 @@
                     </div>
                     <div class="card-body">
                         <p class="card-text">Presentacion dulce y salado en bolsa de 50grs</p>
-                        <a href="#" class="button btn-comprar">AGREGAR AL CARRITO</a>
+                        <p class="card-text precio"> $200 </p>
+                        <div class="contenedor-btn-comprar">
+                            <div class="contenedor-img-carrito">
+                                <i class="fas fa-shopping-cart" ></i>
+                            </div>
+                            <a href="#" class="button btn-comprar">AGREGAR AL CARRITO</a>
+                        </div>
                     </div>
                  </div>
             </div>
+   
+            
+
             <div class="swiper-slide" id="swiper-slide">
                 <div class="card  p-2 mb-3 bg-body rounded " >
                     <div class="card-img">
@@ -137,16 +177,22 @@
                     </div>
                     <div class="card-body">
                         <p class="card-text">Presentacion dulce y salado en bolsa de 50grs</p>
-                        <a href="#" class="button btn-comprar">AGREGAR AL CARRITO</a>
+                        <p class="card-text precio"> $200 </p>
+                        <div class="contenedor-btn-comprar">
+                            <div class="contenedor-img-carrito">
+                                <i class="fas fa-shopping-cart" ></i>
+                            </div>
+                            <a href="#" class="button btn-comprar">AGREGAR AL CARRITO</a>
+                        </div>
                     </div>
                  </div>
             </div>  
         </div>
-        <div class="swiper-button-next"></div>
-       <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next" id="swiper-btn"></div>
+       <div class="swiper-button-prev" id="swiper-btn"></div>
         <div class="swiper-pagination" id="swiper-pagination"></div>
-    </div>
-        
+
+       
     </section>
 
 

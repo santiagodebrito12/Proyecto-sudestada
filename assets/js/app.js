@@ -79,17 +79,25 @@ const swiper = new Swiper('.swiper-container', {
       spaceBetween: 10,
     },
     "@0.75": {
-        slidesPerView: 1,
+        slidesPerView: 2,
         spaceBetween: 10,
     },
     "@1.00": {
       slidesPerView: 2,
       spaceBetween: 30,
     },
+    "@1.25": {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
     "@1.50": {
-    slidesPerView: 3,
+    slidesPerView: 2,
     spaceBetween: 30,
     },
+    "@1.75": {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      },
     "@2.00": {
       slidesPerView: 3,
       spaceBetween: 30,

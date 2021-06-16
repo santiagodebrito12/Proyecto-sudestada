@@ -50,22 +50,20 @@
     .card-img{
         width: 80%;
         margin: auto;
-        background-image: url(../../assets/img/background-img.png);
-         background-size: cover;
-        background-repeat: no-repeat;
+        // background-color:rgb(0, 84, 154);
+        background-color: #FAF1E6;
+        border-radius: 50%;
+        position: relative;
+        z-index: 0;
     }
-    #producto1{
-        width: 80%;
-        margin: auto;
-        background-image: url(../../assets/img/background-img2.png);
-         background-size: cover;
-        background-repeat: no-repeat;
+   
+    .precio{
+        color:#00aeef;
+        font-weight: bolder;
     }
-    
     .img-producto{
         width: 100%;
-        
-        
+     
     }
     .img-producto:hover{
         animation: .8s rotate linear;
@@ -83,6 +81,9 @@
     
     #swiper-container{
         min-height: 400px;  
+    }
+    #swiper-btn{
+        display: none;
     }
 }
 
@@ -138,11 +139,15 @@
     width: 80%;
     margin: auto;
     // background-color:rgb(0, 84, 154);
+    background-color: #FAF1E6;
     border-radius: 50%;
     position: relative;
     z-index: 0;
 }
-
+.precio{
+    color:#00aeef;
+    font-weight: bolder;
+}
 
 .img-producto{
     width: 100%;

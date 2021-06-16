@@ -1,0 +1,48 @@
+@media(max-width:1023px){
+    .img-pochoclo{
+        width: 6rem;
+        height: auto;
+    }
+}
+@media(min-width:1024px){
+    .img-pochoclo{
+        width: 10rem;
+        height: auto;
+    }
+}
+.popcorn-left{
+    position: absolute;
+    left: 10px;
+    width: 220px;
+    height: 220px;
+    animation-delay: 6s;
+    -webkit-animation: heartBeat 3s;
+    animation: heartBeat 3s;
+    transform: translate3d(0px, -150px, 0px);
+}
+.popcorn-rigth-top{
+    position: absolute;
+    right: 10px;
+    width: 220px;
+    height: 220px;
+    animation-delay: 6s;
+    -webkit-animation: heartBeat 3s;
+    animation: heartBeat 3s;
+    transform: translate3d(0px, -150px, 0px);
+}
+.popcorn-rigth{
+    position: absolute;
+    right: 15%;
+    animation-delay: 6s;
+    -webkit-animation: heartBeat 1s;
+    animation: heartBeat 3s;
+    transform: translate3d(0px, 323.226px, 0px);
+}
+.popcorn-rigth-bottom{
+    position: absolute;
+    right: 8%;
+    animation-delay: 6s;
+    -webkit-animation: heartBeat 1s;
+    animation: heartBeat 3s;
+    transform: translate3d(0px, 323.226px, 0px);
+}
