@@ -7,7 +7,6 @@
     justify-content: center;
     background-color: black;
     margin-top: -10px;
-    width: 100%;
     background-image: url(../../assets/img/background-header2x.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -563,6 +562,9 @@
     position: relative;
     z-index: 0;
   }
+  .card-text {
+    text-align: center;
+  }
   .precio {
     color: #00aeef;
     font-weight: bolder;
@@ -796,7 +798,10 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1200px) {
+  #cervezas, #pochoclos {
+    margin: 5% 3%;
+  }
   .contenedor-btn {
     width: 90%;
     margin: 1% 5%;
@@ -815,18 +820,62 @@
     text-align: center;
   }
   .contenedor {
-    margin: 5% 5%;
-    width: 90%;
+    padding: 1rem;
+    width: 100%;
   }
   .contenedor-seccion-productos {
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 5%;
   }
   .card-seccion {
-    max-width: 350px;
+    max-width: 40%;
+    flex-shrink: 0;
+    margin: 0 3%;
+  }
+}
+
+.contenedor-seccion-productos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 1201px) {
+  #cervezas, #pochoclos {
+    margin: 5% 3%;
+  }
+  .contenedor-btn {
+    width: 90%;
+    margin: 1% 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn-secciones {
+    margin: 0 2%;
+  }
+  .titulo {
+    font-family: "Chewy", cursive;
+    color: #00549a;
+    font-size: 3rem;
+    font-weight: bolder;
+    text-align: center;
+  }
+  .contenedor {
+    padding: 1rem;
+    width: 100%;
+  }
+  .contenedor-seccion-productos {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .card-seccion {
+    max-width: 25%;
     flex-shrink: 0;
     margin: 0 3%;
   }
