@@ -1,4 +1,15 @@
 
+.nav-productos{
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+}
+
 @media(max-width:1200px){
     header{
         width: 100%;
@@ -115,6 +126,30 @@
                     display: none;
                 }
             }
+            .nav-productos{
+                display: inline-block;
+                margin-left: .255em;
+                vertical-align: .255em;
+                content: "";
+                border-top: .3em solid;
+                border-right: .3em solid transparent;
+                border-bottom: 0;
+                border-left: .3em solid transparent;
+            }
+            
+            .sub-menu{
+                display: flex;
+                flex-direction: column;
+            }
+
+            .close{
+                height: 0px;
+                overflow: hidden;
+            }
+            
+
+            
+            
             
         }
 
@@ -221,4 +256,7 @@
         top: 4px;
         left: -20px;
     }
+
+    
+    
 }
