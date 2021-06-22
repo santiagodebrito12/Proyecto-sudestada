@@ -472,13 +472,17 @@
     height: 21,9rem;
   }
   .contenedor-info-seccion {
-    width: 50%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .contenedor-info-seccion h2 {
     font-family: "Chewy", cursive;
     color: #00549a;
     font-size: 3rem;
     font-weight: bolder;
+    text-align: center;
   }
   .contenedor-info-seccion p {
     color: black;
@@ -1057,8 +1061,8 @@
   .popcorn-left {
     position: absolute;
     left: 10px;
-    width: 220px;
-    height: 220px;
+    width: 185px;
+    height: 185px;
     animation-delay: 6s;
     animation: heartBeat 3s;
     transform: translate3d(0px, -150px, 0px);
@@ -1066,8 +1070,8 @@
   .popcorn-rigth-top {
     position: absolute;
     right: 10px;
-    width: 220px;
-    height: 220px;
+    width: 185px;
+    height: 185px;
     animation-delay: 6s;
     animation: heartBeat 3s;
     transform: translate3d(0px, -150px, 0px);
