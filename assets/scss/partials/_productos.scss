@@ -45,7 +45,8 @@
         margin: auto;
         display: flex;
         flex-direction: column;
-        align-items: center;  
+        align-items: center; 
+        border: none; 
     }
     .card-img{
         width: 80%;
@@ -84,7 +85,7 @@
     }
     
     #swiper-container{
-        min-height: 550px;  
+        min-height: 520px;  
     }
     #swiper-pagination{
         margin-top: 1rem;
