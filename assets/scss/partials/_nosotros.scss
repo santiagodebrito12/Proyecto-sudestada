@@ -36,10 +36,10 @@
 }
 .contenedor-info-seccion p{
     color: black;
-    font-weight: bold;
     font-size: 1.2rem;
     margin: auto;
     font-family:$fuenteGeneral;
+    text-align: center;
 
 }
 
@@ -71,8 +71,8 @@
 }
 .contenedor-info-seccion p{
     color: black;
-    font-weight: bold;
     font-size: 1.8rem;
+    text-align: center;
     font-family:$fuenteGeneral;
 }
 .border-seccion-productos{

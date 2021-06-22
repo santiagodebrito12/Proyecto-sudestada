@@ -63,6 +63,13 @@
         color: #ffff;
         border: none;
         font-family:$fuenteGeneral;
+        padding: 0.5rem 1.5rem;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: bold;
+         font-family: $fuenteGeneral;
+        
+        
     }
     
     .fa-shopping-cart{
@@ -118,9 +125,11 @@
     .btn-main{
         background-color: rgb(0, 84, 154);
         color: #ffff;
-        border: none;
-        min-width: 10rem;
+        padding: 0.8rem 2rem;
+        text-align: center;
         font-size: 1rem;
+        font-weight: bold;
+        font-family: $fuenteGeneral;
     }
    
 
@@ -129,7 +138,7 @@
         background-color: rgb(0, 84, 154);
         color: #ffff;
         border: none;
-        padding: 1rem;
+        padding: 1rem 1rem;
         justify-content: space-around;
         align-items: center;
         font-size: 1.2rem;
@@ -137,6 +146,7 @@
         width: 100%;
     }
     .btn-comprar:hover,.btn-main:hover{
+            transition: 0.5s all ease-in-out;
             box-shadow: -1px 2px 53px -4px rgba(0,0,0,0.75);
            -webkit-box-shadow: -1px 2px 53px -4px rgba(0,0,0,0.75);
            -moz-box-shadow: -1px 2px 53px -4px rgba(0,0,0,0.75);

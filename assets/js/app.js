@@ -70,40 +70,33 @@ const swiper = new Swiper('.swiper-container', {
     disableOnInteraction: false,
   },
   breakpoints: {
-    "@0.00": {
-     slidesPerView: 1,
-     spaceBetween: 10,
-    },
-    "@0.50":{
-      slidesPerView: 1,
-      spaceBetween: 10,
-    },
-    "@0.75": {
-        slidesPerView: 2,
+      320: {
+        slidesPerView: 1,
         spaceBetween: 10,
-    },
-    "@1.00": {
-      slidesPerView: 2,
-      spaceBetween: 30,
-    },
-    "@1.25": {
-      slidesPerView: 2,
-      spaceBetween: 30,
-    },
-    "@1.50": {
-    slidesPerView: 2,
-    spaceBetween: 30,
-    },
-    "@1.75": {
-      slidesPerView: 3,
-      spaceBetween: 30,
       },
-    "@2.00": {
-      slidesPerView: 3,
-      spaceBetween: 30,
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 1,
+        spaceBetween: 10
       },
+      // when window width is >= 640px
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 10
+      },
+      1024: {
+        slidesPerView: 2,
+        spaceBetween: 10
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 10
+      },
+      1044:{
+        slidesPerView: 3,
+        spaceBetween: 10
+      }
 
-
-},
+}, 
 
 });

@@ -1,6 +1,6 @@
 @media(max-width:767px){
     #cervezas, #pochoclos{
-            margin: 10% 5%;
+            margin: 6rem 5%;
     }
     .contenedor-btn{
         width: 100%;
@@ -81,7 +81,7 @@
 
 @media(min-width:1201px){
     #cervezas, #pochoclos{
-        margin: 5% 3%;
+        margin: 5rem 3%;
  }
 .contenedor-btn{
     width: 90%;
@@ -97,7 +97,7 @@
 .titulo{
         font-family: $fuenteTitulos;
         color:rgb(0, 84, 154);
-        font-size: 3rem;
+        font-size: 4rem;
         font-weight: bolder;
         text-align: center;
 }
