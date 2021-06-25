@@ -43,7 +43,8 @@
     top: -20px;
   }
   .contenedor-burguer-menu {
-    padding-top: 1rem;
+    margin: 0.5rem 0;
+    padding: 1rem;
     width: 100%;
     height: 3.5rem;
     background-color: black;
@@ -205,7 +206,7 @@
   }
   .lista-nav {
     margin-right: 5%;
-    width: 55%;
+    width: 65%;
     height: 64px;
     position: relative;
     z-index: 1;
@@ -234,12 +235,13 @@
     background-color: #231f20;
   }
   header ul li {
-    margin: 0 1.5rem;
-    padding: 0.3rem;
+    margin: 0 2.5rem;
+    padding: 0.7rem 0.5rem;
+    cursor: pointer;
   }
   header ul li:hover {
     background-color: #0095da;
-    padding: .7rem;
+    padding: 0.7rem 0.5rem;
     border-radius: 5%;
   }
   header ul li a {
@@ -476,6 +478,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 3rem;
   }
   .contenedor-info-seccion h2 {
     font-family: "Chewy", cursive;
@@ -872,7 +875,8 @@
   }
   .lista-footer li, .lista-footer-redes li {
     margin: 0 2%;
-    padding: 0.4rem;
+    padding: .7rem;
+    cursor: pointer;
   }
   .lista-footer li:hover, .lista-footer-redes li:hover {
     background-color: #0095da;
